@@ -1,0 +1,15 @@
+TWITTER_CONSUMERKEY=abc
+TWITTER_SECRET=abc
+TWITTER_CALLBACK_URL=http://localhost:8080/auth/twitter/callback
+FACEBOOK_CLIENTID=abc
+FACEBOOK_SECRET=abc
+FACEBOOK_CALLBACK_URL=http://localhost:8080/auth/facebook/callback
+GOOGLE_CLIENTID=abc
+GOOGLE_SECRET=abc
+GOOGLE_CALLBACK_URL=http://localhost:8080/auth/google/callback
+MONGO_CONN=mongodb://connection string
+SESSION_SEC=session secret
+AMAZONS3_ACCESS_KEY=aws key if you want it
+AMAZONS3_SECRET_KEY=other aws key
+AMAZONS3_BUCKET=aws bucket
+PORT=3000

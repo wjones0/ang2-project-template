@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Title</title>
+
+    <!-- 1. Load libraries -->
+    <script src="jslib/angular2-polyfills.js"></script>
+    <script src="jslib/system.src.js"></script>
+    <script src="jslib/Rx.js"></script>
+    <script src="jslib/angular2.dev.js"></script>
+    <script src="jslib/router.dev.js"></script>
+    <script src="jslib/http.dev.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/site.css">
+    
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body class="container">
+    <my-app>Loading...</my-app>
+  </body>
+
+</html>
